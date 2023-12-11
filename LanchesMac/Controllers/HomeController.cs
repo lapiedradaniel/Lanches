@@ -19,10 +19,12 @@ namespace LanchesMac.Controllers
 
         public IActionResult Index()
         {
+
             var homeViewModel = new HomeViewModel
             {
                 LanchesPreferidos = _lancheRepository.LanchesPreferidos 
             };
+            ViewData["Action"] = "Index";
             return View(homeViewModel);
         }
 

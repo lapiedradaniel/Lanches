@@ -2,16 +2,21 @@
 
 
 
-<div class="col-sm-6 col-lg-4 all burger">
+<div a class="col-sm-6 col-lg-4 all burger"> 
     <div class="box">
+        
         <div>
+
             <div class="img-box">
-                <img src="@Model.ImagemUrl" class="img-fluid">
+                <a asp-controller="Lanche" asp-action="Details"
+                   asp-route-lancheId="@Model.LancheId">
+                    <img src="@Model.ImagemUrl" class="img-fluid">
+               </a>
+                
             </div>
             <div class="detail-box">
                 <h5>
-                    <a asp-controller="Lanche" asp-action="Details"
-                       asp-route-lancheId="@Model.LancheId">@Model.Nome</a>
+                    @Model.Nome
                 </h5>
                 <p>
                     @Model.DescricaoCurta
@@ -20,7 +25,9 @@
                     <h6>
                         @Model.Preco.ToString("c")
                     </h6>
-                    <a href="">
+                    <a asp-controller="CarrinhoCompra"
+                       asp-action="AdicionarItemNoCarrinhoCompra" asp-route-lancheId="@Model.LancheId">
+
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                         <g>

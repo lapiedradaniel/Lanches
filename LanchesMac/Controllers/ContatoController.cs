@@ -8,5 +8,10 @@ namespace LanchesMac.Controllers
         {
             return View();
         }
+
+        public IActionResult Sobre()
+        {
+            return View();
+        }
     }
 }
