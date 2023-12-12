@@ -16,6 +16,11 @@ $(document).ready(function () {
         $("#searchForm").toggleClass("d-none");
     });
 
+    $("#searchForm").click(function (e) {
+        // Impede que o clique na barra de pesquisa propague para o documento
+        e.stopPropagation();
+    });
+
     // Adicione esta parte do script para fechar o formulário se clicar fora dele
     $(document).mouseup(function (e) {
         var container = $("#searchForm");
