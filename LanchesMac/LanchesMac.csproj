@@ -8,13 +8,9 @@
 
   <ItemGroup>
     <Compile Remove="Template\images\**" />
-    <Compile Remove="Template\js\**" />
     <Content Remove="Template\images\**" />
-    <Content Remove="Template\js\**" />
     <EmbeddedResource Remove="Template\images\**" />
-    <EmbeddedResource Remove="Template\js\**" />
     <None Remove="Template\images\**" />
-    <None Remove="Template\js\**" />
   </ItemGroup>
 
   <ItemGroup>

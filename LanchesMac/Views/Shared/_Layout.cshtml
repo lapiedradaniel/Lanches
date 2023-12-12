@@ -25,14 +25,16 @@
         <header class="header_section">
             <div class="container">
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
-                    <a class="navbar-brand" href="index.html">
-                        <span>
+                    <a class="navbar-brand"  asp-controller="Home" asp-action="Index">
+                        <span >
                             Feane
                         </span>
                     </a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"> </span>
+                    
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -116,11 +118,7 @@
                   </g>
                 </svg>
                             </a>
-                            <form class="form-inline">
-                                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                                    <i class='bx bx-log-in'> .Login</i>
-                                </button>
-                            </form>
+                           @await Html.PartialAsync("_LoginPartial")
                             
                         </div>
                     </div>
@@ -128,10 +126,10 @@
             </div>
         </header>
         <!-- end header section -->
+
+
+        <!-- Section criada na view Index da Home -->
         @RenderSection("slider_section", required:false)
-
-
-
     </div>
 
 
@@ -222,7 +220,7 @@
             </div>
         </div>
     </footer>
-    
+   
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

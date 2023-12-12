@@ -2,20 +2,20 @@
 
 @inject SignInManager<IdentityUser> SignInManager
 
-@if(SignInManager.IsSignedIn(User))
+@if (SignInManager.IsSignedIn(User))
 {
-    <form asp-area="" asp-controller="Account" asp-action="Logout" id="logoutForm" method="post" class="navbar-left">
-        <ul class="nav navbar-nav navbar-left">
-            <button type="submit" style="width:auto" class="nav-link btn btn-link py-0">
-                Logout : @User.Identity.Name &nbsp;
-            </button>
-        </ul>
+    <form asp-area="" asp-controller="Account" asp-action="Logout" id="logoutForm" method="post" class="form-inline">
+
+        <button type="submit" class="btn  my-2 my-sm-0 nav_search-btn">
+
+            <i class='bx bx-log-in'>.Sair @User.Identity.Name &nbsp; </i>
+        </button>
     </form>
 }
 else
 {
-    <ul class="nav navbar-nav navbar-left">
-        <a class="nav-link text-light" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)" style="color:white">&nbsp; Login&nbsp; </a>
-        <a class="nav-link text-light" asp-controller="Account" asp-action="Register" style="color:white">&nbsp;Registro&nbsp;&nbsp;&nbsp; </a>
-    </ul>
+    <button class="btn  my-2 my-sm-0 nav_search-btn">
+        <a class="text-white" asp-controller="Account" asp-action="Login"><i class='bx bx-log-in'>.Entrar </i></a>
+
+    </button>
 }
