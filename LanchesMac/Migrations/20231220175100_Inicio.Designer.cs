@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LanchesMac.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231212184130_iniciocomtabelas")]
-    partial class iniciocomtabelas
+    [Migration("20231220175100_Inicio")]
+    partial class Inicio
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -84,6 +84,12 @@ namespace LanchesMac.Migrations
                             CategoriaId = 2,
                             CategoriaNome = "Pizza",
                             Descricao = "Melhores Pizza"
+                        },
+                        new
+                        {
+                            CategoriaId = 3,
+                            CategoriaNome = "Bebidas",
+                            Descricao = "Melhores Bebidas"
                         });
                 });
 
@@ -144,10 +150,10 @@ namespace LanchesMac.Migrations
                             DescricaoCurta = "Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão sem gergelim",
                             DescricaoDetalhada = "Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão sem gergelim",
                             EmEstoque = true,
-                            ImagemThumbnailUrl = "https://cache-mcd-ecommerce.appmcdonalds.com/images/BR/17%20DLV.png",
-                            ImagemUrl = "https://cache-mcd-ecommerce.appmcdonalds.com/images/BR/17%20DLV.png",
+                            ImagemThumbnailUrl = "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXCTbnv/200/200/original?country=br",
+                            ImagemUrl = "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXCTbnv/200/200/original?country=br",
                             IsLanchePreferido = true,
-                            Nome = "Hamburger",
+                            Nome = "Big Mac",
                             Preco = 15.00m
                         },
                         new
@@ -157,10 +163,10 @@ namespace LanchesMac.Migrations
                             DescricaoCurta = "Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão sem gergelim",
                             DescricaoDetalhada = "Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão sem gergelim",
                             EmEstoque = true,
-                            ImagemThumbnailUrl = "https://cache-mcd-ecommerce.appmcdonalds.com/images/BR/17%20DLV.png",
-                            ImagemUrl = "https://cache-mcd-ecommerce.appmcdonalds.com/images/BR/17%20DLV.png",
+                            ImagemThumbnailUrl = "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXNUCF7/200/200/original?country=br",
+                            ImagemUrl = "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXNUCF7/200/200/original?country=br",
                             IsLanchePreferido = true,
-                            Nome = "Hamburger",
+                            Nome = "Quarterão com Queijo",
                             Preco = 10.00m
                         },
                         new
@@ -170,10 +176,10 @@ namespace LanchesMac.Migrations
                             DescricaoCurta = "Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão sem gergelim",
                             DescricaoDetalhada = "Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão sem gergelim",
                             EmEstoque = true,
-                            ImagemThumbnailUrl = "https://cache-mcd-ecommerce.appmcdonalds.com/images/BR/17%20DLV.png",
-                            ImagemUrl = "https://cache-mcd-ecommerce.appmcdonalds.com/images/BR/17%20DLV.png",
+                            ImagemThumbnailUrl = "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXv9bZg/200/200/original?country=br",
+                            ImagemUrl = "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXv9bZg/200/200/original?country=br",
                             IsLanchePreferido = true,
-                            Nome = "Hamburger",
+                            Nome = "Brabo Melt Crispy",
                             Preco = 30.00m
                         },
                         new
@@ -219,8 +225,8 @@ namespace LanchesMac.Migrations
                         {
                             LancheId = 7,
                             CategoriaId = 1,
-                            DescricaoCurta = "Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão sem gergelim",
-                            DescricaoDetalhada = "Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão sem gergelim",
+                            DescricaoCurta = "Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão",
+                            DescricaoDetalhada = "Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão",
                             EmEstoque = true,
                             ImagemThumbnailUrl = "https://cache-mcd-ecommerce.appmcdonalds.com/images/BR/17%20DLV.png",
                             ImagemUrl = "https://cache-mcd-ecommerce.appmcdonalds.com/images/BR/17%20DLV.png",
@@ -271,7 +277,7 @@ namespace LanchesMac.Migrations
                         {
                             LancheId = 11,
                             CategoriaId = 2,
-                            DescricaoCurta = "Uma pizza simples, mas que conquistou uma legião de fãs em todo o mundo. Ela está presente em mais de 30% dos pedidos. Leva calabresa e cebola",
+                            DescricaoCurta = "Uma pizza simples, mas que conquistou uma legião de fãs em todo o mundo. Ela está presente em mais de 30% dos pedidos",
                             DescricaoDetalhada = "Uma pizza simples, mas que conquistou uma legião de fãs em todo o mundo. Ela está presente em mais de 30% dos pedidos. Leva calabresa e cebola",
                             EmEstoque = true,
                             ImagemThumbnailUrl = "https://img.freepik.com/fotos-gratis/feche-a-pizza-italiana-sobre-o-queijo-cole-o-foco-seletivo-generativo-ai_1258-153063.jpg",
@@ -287,8 +293,8 @@ namespace LanchesMac.Migrations
                             DescricaoCurta = "Ovos, cebola, azeitona, ervilha, queijo e presunto dão sabor à segunda pizza mais queridinha dos brasileiros",
                             DescricaoDetalhada = "Ovos, cebola, azeitona, ervilha, queijo e presunto dão sabor à segunda pizza mais queridinha dos brasileiros",
                             EmEstoque = true,
-                            ImagemThumbnailUrl = "https://img.freepik.com/fotos-gratis/feche-a-pizza-italiana-sobre-o-queijo-cole-o-foco-seletivo-generativo-ai_1258-153063.jpg",
-                            ImagemUrl = "https://img.freepik.com/fotos-gratis/feche-a-pizza-italiana-sobre-o-queijo-cole-o-foco-seletivo-generativo-ai_1258-153063.jpg",
+                            ImagemThumbnailUrl = "https://maissaborgranjalisboa.onezap.link/wp-content/uploads/2022/03/Portuguesa-500x356.jpg",
+                            ImagemUrl = "https://maissaborgranjalisboa.onezap.link/wp-content/uploads/2022/03/Portuguesa-500x356.jpg",
                             IsLanchePreferido = true,
                             Nome = "Portuguesa",
                             Preco = 38.00m
@@ -336,7 +342,7 @@ namespace LanchesMac.Migrations
                         {
                             LancheId = 16,
                             CategoriaId = 2,
-                            DescricaoCurta = "Um sabor genuinamente italiano que não pode faltar na sua pizzaria ou no seu pedido. Leva muçarela, azeite, molho de tomate e manjericão",
+                            DescricaoCurta = "Um sabor genuinamente italiano que não pode faltar na sua pizzaria ou no seu pedido. Leva muçarela, azeite, molho de tomate",
                             DescricaoDetalhada = "Um sabor genuinamente italiano que não pode faltar na sua pizzaria ou no seu pedido. Leva muçarela, azeite, molho de tomate e manjericão",
                             EmEstoque = true,
                             ImagemThumbnailUrl = "https://img.freepik.com/fotos-gratis/feche-a-pizza-italiana-sobre-o-queijo-cole-o-foco-seletivo-generativo-ai_1258-153063.jpg",
@@ -362,7 +368,7 @@ namespace LanchesMac.Migrations
                         {
                             LancheId = 18,
                             CategoriaId = 2,
-                            DescricaoCurta = "Este não é um lombo qualquer, é um do tipo canadense! Sua mistura de ingredientes contém: lombinho, cebola, bacon e champignon",
+                            DescricaoCurta = "Este não é um lombo qualquer, é um do tipo canadense! Sua mistura de ingredientes contém: lombinho, cebola e bacon",
                             DescricaoDetalhada = "Este não é um lombo qualquer, é um do tipo canadense! Sua mistura de ingredientes contém: lombinho, cebola, bacon e champignon",
                             EmEstoque = true,
                             ImagemThumbnailUrl = "https://img.freepik.com/fotos-gratis/feche-a-pizza-italiana-sobre-o-queijo-cole-o-foco-seletivo-generativo-ai_1258-153063.jpg",
@@ -396,6 +402,110 @@ namespace LanchesMac.Migrations
                             IsLanchePreferido = true,
                             Nome = "Nutella",
                             Preco = 39.00m
+                        },
+                        new
+                        {
+                            LancheId = 21,
+                            CategoriaId = 3,
+                            DescricaoCurta = "Refrigerante cola-cola",
+                            DescricaoDetalhada = "Refrigerante coca-cola ",
+                            EmEstoque = true,
+                            ImagemThumbnailUrl = "https://i.pinimg.com/originals/52/09/77/520977593cb52286251d0de3ca50751d.png",
+                            ImagemUrl = "https://i.pinimg.com/originals/52/09/77/520977593cb52286251d0de3ca50751d.png",
+                            IsLanchePreferido = true,
+                            Nome = "Coca-cola",
+                            Preco = 10.00m
+                        },
+                        new
+                        {
+                            LancheId = 22,
+                            CategoriaId = 3,
+                            DescricaoCurta = "Refrigerante cola-cola Lata",
+                            DescricaoDetalhada = "Refrigerante coca-cola Lata",
+                            EmEstoque = true,
+                            ImagemThumbnailUrl = "https://cdn.awsli.com.br/800x800/446/446822/produto/231071713/162882-800-450-34cumj7dsl.jpg",
+                            ImagemUrl = "https://cdn.awsli.com.br/800x800/446/446822/produto/231071713/162882-800-450-34cumj7dsl.jpg",
+                            IsLanchePreferido = true,
+                            Nome = "Coca-cola Lata",
+                            Preco = 5.00m
+                        },
+                        new
+                        {
+                            LancheId = 23,
+                            CategoriaId = 3,
+                            DescricaoCurta = "Refrigerante Fanta Laranja",
+                            DescricaoDetalhada = "Refrigerante Fanta Laranja",
+                            EmEstoque = true,
+                            ImagemThumbnailUrl = "https://images.tcdn.com.br/img/img_prod/1014792/refrigerante_fanta_laranja_retornavel_2l_24919_1_edab3291f5a10d7a3da9ca96eee01d72.png",
+                            ImagemUrl = "https://images.tcdn.com.br/img/img_prod/1014792/refrigerante_fanta_laranja_retornavel_2l_24919_1_edab3291f5a10d7a3da9ca96eee01d72.png",
+                            IsLanchePreferido = true,
+                            Nome = "Fanta Laranja",
+                            Preco = 10.00m
+                        },
+                        new
+                        {
+                            LancheId = 24,
+                            CategoriaId = 3,
+                            DescricaoCurta = "Refrigerante Fanta Laranja Lata",
+                            DescricaoDetalhada = "Refrigerante Fanta Laranja Lata",
+                            EmEstoque = true,
+                            ImagemThumbnailUrl = "https://cdn.awsli.com.br/2500x2500/1330/1330028/produto/51587134/5e54346f8c.jpg",
+                            ImagemUrl = "https://cdn.awsli.com.br/2500x2500/1330/1330028/produto/51587134/5e54346f8c.jpg",
+                            IsLanchePreferido = true,
+                            Nome = "Fanta Laranja Lata",
+                            Preco = 5.00m
+                        },
+                        new
+                        {
+                            LancheId = 25,
+                            CategoriaId = 3,
+                            DescricaoCurta = "Refrigerante Guarana",
+                            DescricaoDetalhada = "Refrigerante Guarana",
+                            EmEstoque = true,
+                            ImagemThumbnailUrl = "https://media.soujusto.com.br/products/5180..jpg",
+                            ImagemUrl = "https://media.soujusto.com.br/products/5180..jpg",
+                            IsLanchePreferido = true,
+                            Nome = "Guarana",
+                            Preco = 10.00m
+                        },
+                        new
+                        {
+                            LancheId = 26,
+                            CategoriaId = 3,
+                            DescricaoCurta = "Refrigerante Guarana Lata",
+                            DescricaoDetalhada = "Refrigerante Guarana Lata",
+                            EmEstoque = true,
+                            ImagemThumbnailUrl = "https://io.convertiez.com.br/m/drogal/shop/products/images/8290148/medium/refrigerante-guarana-antarctica-lata-350ml_16825.png",
+                            ImagemUrl = "https://io.convertiez.com.br/m/drogal/shop/products/images/8290148/medium/refrigerante-guarana-antarctica-lata-350ml_16825.png",
+                            IsLanchePreferido = true,
+                            Nome = "Guarana Lata",
+                            Preco = 5.00m
+                        },
+                        new
+                        {
+                            LancheId = 27,
+                            CategoriaId = 3,
+                            DescricaoCurta = "Refrigerante Fanta Uva",
+                            DescricaoDetalhada = "Refrigerante Fanta Uva",
+                            EmEstoque = true,
+                            ImagemThumbnailUrl = "https://www.imigrantesbebidas.com.br/img/bebida/images/products/full/1897-refrigerante-fanta-uva-2l.jpg?s=a5b8770011b639aac88cda55a52db8b5",
+                            ImagemUrl = "https://www.imigrantesbebidas.com.br/img/bebida/images/products/full/1897-refrigerante-fanta-uva-2l.jpg?s=a5b8770011b639aac88cda55a52db8b5",
+                            IsLanchePreferido = true,
+                            Nome = "Fanta Uva",
+                            Preco = 10.00m
+                        },
+                        new
+                        {
+                            LancheId = 28,
+                            CategoriaId = 3,
+                            DescricaoCurta = "Refrigerante Fanta Uva Lata",
+                            DescricaoDetalhada = "Refrigerante Fanta Uva Lata",
+                            EmEstoque = true,
+                            ImagemThumbnailUrl = "https://media.soujusto.com.br/products/Refrigerante_Fanta_Uva_350Ml.jpg",
+                            ImagemUrl = "https://media.soujusto.com.br/products/Refrigerante_Fanta_Uva_350Ml.jpg",
+                            IsLanchePreferido = true,
+                            Nome = "Fanta Uva Lata",
+                            Preco = 5.00m
                         });
                 });
 

@@ -38,7 +38,13 @@ namespace LanchesMac.Context
                     CategoriaId = 2,
                     CategoriaNome = "Pizza",
                     Descricao = "Melhores Pizza"
-                }
+                },
+                 new Categoria
+                 {
+                     CategoriaId = 3,
+                     CategoriaNome = "Bebidas",
+                     Descricao = "Melhores Bebidas"
+                 }
             // Adicione mais categorias conforme necessário
             );
 
@@ -194,8 +200,8 @@ namespace LanchesMac.Context
                       DescricaoCurta = "Ovos, cebola, azeitona, ervilha, queijo e presunto dão sabor à segunda pizza mais queridinha dos brasileiros",
                       DescricaoDetalhada = "Ovos, cebola, azeitona, ervilha, queijo e presunto dão sabor à segunda pizza mais queridinha dos brasileiros",
                       Preco = 38.00m,
-                      ImagemUrl = "https://img.freepik.com/fotos-gratis/feche-a-pizza-italiana-sobre-o-queijo-cole-o-foco-seletivo-generativo-ai_1258-153063.jpg",
-                      ImagemThumbnailUrl = "https://img.freepik.com/fotos-gratis/feche-a-pizza-italiana-sobre-o-queijo-cole-o-foco-seletivo-generativo-ai_1258-153063.jpg",
+                      ImagemUrl = "https://maissaborgranjalisboa.onezap.link/wp-content/uploads/2022/03/Portuguesa-500x356.jpg",
+                      ImagemThumbnailUrl = "https://maissaborgranjalisboa.onezap.link/wp-content/uploads/2022/03/Portuguesa-500x356.jpg",
                       IsLanchePreferido = true,
                       EmEstoque = true,
                       CategoriaId = 2
@@ -303,7 +309,112 @@ namespace LanchesMac.Context
                       IsLanchePreferido = true,
                       EmEstoque = true,
                       CategoriaId = 2
-                  }
+                  },
+                  new Lanche
+                  {
+                      LancheId = 21,
+                      Nome = "Coca-cola",
+                      DescricaoCurta = "Refrigerante cola-cola",
+                      DescricaoDetalhada = "Refrigerante coca-cola ",
+                      Preco = 10.00m,
+                      ImagemUrl = "https://i.pinimg.com/originals/52/09/77/520977593cb52286251d0de3ca50751d.png",
+                      ImagemThumbnailUrl = "https://i.pinimg.com/originals/52/09/77/520977593cb52286251d0de3ca50751d.png",
+                      IsLanchePreferido = true,
+                      EmEstoque = true,
+                      CategoriaId = 3
+                  },
+                  new Lanche
+                  {
+                      LancheId = 22,
+                      Nome = "Coca-cola Lata",
+                      DescricaoCurta = "Refrigerante cola-cola Lata",
+                      DescricaoDetalhada = "Refrigerante coca-cola Lata",
+                      Preco = 05.00m,
+                      ImagemUrl = "https://cdn.awsli.com.br/800x800/446/446822/produto/231071713/162882-800-450-34cumj7dsl.jpg",
+                      ImagemThumbnailUrl = "https://cdn.awsli.com.br/800x800/446/446822/produto/231071713/162882-800-450-34cumj7dsl.jpg",
+                      IsLanchePreferido = true,
+                      EmEstoque = true,
+                      CategoriaId = 3
+                  },
+                   new Lanche
+                   {
+                       LancheId = 23,
+                       Nome = "Fanta Laranja",
+                       DescricaoCurta = "Refrigerante Fanta Laranja",
+                       DescricaoDetalhada = "Refrigerante Fanta Laranja",
+                       Preco = 10.00m,
+                       ImagemUrl = "https://images.tcdn.com.br/img/img_prod/1014792/refrigerante_fanta_laranja_retornavel_2l_24919_1_edab3291f5a10d7a3da9ca96eee01d72.png",
+                       ImagemThumbnailUrl = "https://images.tcdn.com.br/img/img_prod/1014792/refrigerante_fanta_laranja_retornavel_2l_24919_1_edab3291f5a10d7a3da9ca96eee01d72.png",
+                       IsLanchePreferido = true,
+                       EmEstoque = true,
+                       CategoriaId = 3
+                   },
+                   new Lanche
+                   {
+                       LancheId = 24,
+                       Nome = "Fanta Laranja Lata",
+                       DescricaoCurta = "Refrigerante Fanta Laranja Lata",
+                       DescricaoDetalhada = "Refrigerante Fanta Laranja Lata",
+                       Preco = 05.00m,
+                       ImagemUrl = "https://cdn.awsli.com.br/2500x2500/1330/1330028/produto/51587134/5e54346f8c.jpg",
+                       ImagemThumbnailUrl = "https://cdn.awsli.com.br/2500x2500/1330/1330028/produto/51587134/5e54346f8c.jpg",
+                       IsLanchePreferido = true,
+                       EmEstoque = true,
+                       CategoriaId = 3
+                   },
+                   new Lanche
+                   {
+                       LancheId = 25,
+                       Nome = "Guarana",
+                       DescricaoCurta = "Refrigerante Guarana",
+                       DescricaoDetalhada = "Refrigerante Guarana",
+                       Preco = 10.00m,
+                       ImagemUrl = "https://media.soujusto.com.br/products/5180..jpg",
+                       ImagemThumbnailUrl = "https://media.soujusto.com.br/products/5180..jpg",
+                       IsLanchePreferido = true,
+                       EmEstoque = true,
+                       CategoriaId = 3
+                   },
+                    new Lanche
+                    {
+                        LancheId = 26,
+                        Nome = "Guarana Lata",
+                        DescricaoCurta = "Refrigerante Guarana Lata",
+                        DescricaoDetalhada = "Refrigerante Guarana Lata",
+                        Preco = 05.00m,
+                        ImagemUrl = "https://io.convertiez.com.br/m/drogal/shop/products/images/8290148/medium/refrigerante-guarana-antarctica-lata-350ml_16825.png",
+                        ImagemThumbnailUrl = "https://io.convertiez.com.br/m/drogal/shop/products/images/8290148/medium/refrigerante-guarana-antarctica-lata-350ml_16825.png",
+                        IsLanchePreferido = true,
+                        EmEstoque = true,
+                        CategoriaId = 3
+                    },
+                    new Lanche
+                    {
+                        LancheId = 27,
+                        Nome = "Fanta Uva",
+                        DescricaoCurta = "Refrigerante Fanta Uva",
+                        DescricaoDetalhada = "Refrigerante Fanta Uva",
+                        Preco = 10.00m,
+                        ImagemUrl = "https://www.imigrantesbebidas.com.br/img/bebida/images/products/full/1897-refrigerante-fanta-uva-2l.jpg?s=a5b8770011b639aac88cda55a52db8b5",
+                        ImagemThumbnailUrl = "https://www.imigrantesbebidas.com.br/img/bebida/images/products/full/1897-refrigerante-fanta-uva-2l.jpg?s=a5b8770011b639aac88cda55a52db8b5",
+                        IsLanchePreferido = true,
+                        EmEstoque = true,
+                        CategoriaId = 3
+                    },
+                    new Lanche
+                    {
+                        LancheId = 28,
+                        Nome = "Fanta Uva Lata",
+                        DescricaoCurta = "Refrigerante Fanta Uva Lata",
+                        DescricaoDetalhada = "Refrigerante Fanta Uva Lata",
+                        Preco = 05.00m,
+                        ImagemUrl = "https://media.soujusto.com.br/products/Refrigerante_Fanta_Uva_350Ml.jpg",
+                        ImagemThumbnailUrl = "https://media.soujusto.com.br/products/Refrigerante_Fanta_Uva_350Ml.jpg",
+                        IsLanchePreferido = true,
+                        EmEstoque = true,
+                        CategoriaId = 3
+                    }
+
 
             // Adicione mais lanches conforme necessário
             );
